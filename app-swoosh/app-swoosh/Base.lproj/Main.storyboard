@@ -129,6 +129,9 @@
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <state key="normal" title="Mens"/>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="qxy-XO-QN1" eventType="touchUpInside" id="BRl-xh-fHd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cQ-3Z-iRW" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="374" height="50"/>
@@ -139,6 +142,9 @@
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <state key="normal" title="Womens"/>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="qxy-XO-QN1" eventType="touchUpInside" id="Vn4-qV-6b0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSL-4x-nv3" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="374" height="50"/>
@@ -149,10 +155,13 @@
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <state key="normal" title="Co-ed"/>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="qxy-XO-QN1" eventType="touchUpInside" id="BDc-a8-y7D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lc-rg-wlz" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lc-rg-wlz" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="772" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40277183220000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -199,6 +208,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DRa-Xw-sS0"/>
                     <connections>
+                        <outlet property="nextBtn" destination="8Lc-rg-wlz" id="N1t-wy-6tE"/>
                         <segue destination="NOh-I7-K0g" kind="show" identifier="skillVCSegue" id="3ld-7w-2pF"/>
                     </connections>
                 </viewController>
